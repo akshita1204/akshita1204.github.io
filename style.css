@@ -1,0 +1,90 @@
+/* Reset Default Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Layout */
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 60px auto;
+    grid-template-columns: 200px 1fr;
+    background-color: #181818;  /* Dark Background */
+    color: white;
+}
+
+/* Header (Search Bar) */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: #282828; /* Dark Gray */
+    padding: 10px;
+    grid-column: span 2;
+}
+
+header input {
+    width: 400px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 1px solid #444;
+    outline: none;
+    background-color: #383838; /* Slightly lighter gray */
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+header button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background: red;  /* Red Button */
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 16px;
+}
+
+/* Sidebar */
+aside {
+    background-color: #202020; /* Dark Sidebar */
+    padding: 1rem;
+}
+
+/* Main Video Grid */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Video Cards */
+.card {
+    background-color: #282828; /* Dark Gray */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #383838; /* Lighter Gray on Hover */
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 8px;
+    font-size: 16px;
+    color: white;
+}
